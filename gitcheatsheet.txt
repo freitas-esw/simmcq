@@ -1,0 +1,57 @@
+INSTALL
+
+Ubuntu
+   sudo apt install git
+
+
+Git for all platforms
+   https://git-scm.com/
+
+----------------------------------------------
+
+- Configure user information
+
+   git config --global user.name  "[name]"
+   git config --global user.email "[email]"
+
+
+- Create repositories
+
+   git init          % 
+   git clone [url]   % Download repository that already exists
+
+
+- Working with git
+
+   git status                 % to see which branch and some status of the current branch
+   git add [file]             % snapshots the file in preparation for versioning
+   git commit -m "[message]"  % records file snapshots permanently in version history
+   git log                    % lists version history for the current branch
+
+   git reset [commit]         % Undoes all commits after "[commit]"
+
+- Branches
+
+   git branch [branch-name]     % create new branch
+   git checkout [branch-name]   % Switches to specified branch
+   git merge [branch]           % Merge "branch" into the current working branch
+   git branch -d [branch-name]  % Deletes the specified branch
+
+
+- Synchronize changes
+
+   git remote add [name] [url]    % linking the repository to [name]
+   git remote -v                  % list of created remotes 
+
+   % download and update remote refs along with associated objects
+   git push -u [repository-name] [branch-name]  
+
+   git pull [repository-name]     % incorporates changes from a remote repository into the current branch
+
+   % ps: pull request through forks
+
+----------------------------------------------
+
+References
+
+   https://training.github.com/downloads/github-git-cheat-sheet.pdf
